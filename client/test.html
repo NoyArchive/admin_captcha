@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+</head>
+<body>
+    <script src="./client.js"></script>
+    <script>
+        let start = Math.ceil(new Date()/1000);
+        let key = captcha(start);
+        console.log(key, start)
+        console.log("Time:", Math.ceil(new Date()/1000) - start);
+    </script>
+</body>
+</html>
